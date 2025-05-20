@@ -1,0 +1,38 @@
+$gold: #d4af37;
+
+.header {
+    display: flex;
+    justify-content: flex-start; // 🔧 cambia esto
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+    gap: 3rem; // espacio entre logo y nav
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  
+    img {
+      height: 100px;
+      width: auto;
+      display: block;
+    }
+  }
+
+  .nav {
+    display: flex;
+
+    a {
+      margin-left: 2rem;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+

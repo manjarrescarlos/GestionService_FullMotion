@@ -1,0 +1,43 @@
+.social-sidebar {
+    position: fixed;
+    top: 70%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    z-index: 1000; // para estar por encima de animaciones
+    pointer-events: auto;
+  
+    .icon {
+      font-size: 20px;
+      color: #fff;
+      background: transparent;
+      padding: 10px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
+  
+    .whatsapp-icon {
+      font-size: 35px; // más grande
+      background: #25D366; // color oficial de WhatsApp
+      color: white;
+      margin-top: 20px;
+  
+      &:hover {
+        background: #1ebe5d; // un verde más oscuro al hacer hover
+        color: white;
+      }
+    }
+  }
+  

@@ -1,11 +1,23 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import { HeaderComponent } from './components/header/header.component';
+import { SocialSidebarComponent } from './components/social-sidebar/social-sidebar.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { AnimationBannerComponent } from './components/animation-banner/animation-banner.component';
+import { RouterModule } from '@angular/router'; // Necesario para usar router-outlet
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    HeaderComponent,
+    SocialSidebarComponent,
+    HeroComponent,
+    AnimationBannerComponent,
+    RouterModule // Para routerLink y router-outlet
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'fullmotion';
