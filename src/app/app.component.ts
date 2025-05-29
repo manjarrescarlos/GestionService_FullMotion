@@ -4,7 +4,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { SocialSidebarComponent } from './components/social-sidebar/social-sidebar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AnimationBannerComponent } from './components/animation-banner/animation-banner.component';
-import { RouterModule } from '@angular/router'; // Necesario para usar router-outlet
+import { RouterModule } from '@angular/router';
+import { DrivingExperienceComponent } from './driving-experience/driving-experience.component';
+import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +18,11 @@ import { RouterModule } from '@angular/router'; // Necesario para usar router-ou
     SocialSidebarComponent,
     HeroComponent,
     AnimationBannerComponent,
-    RouterModule // Para routerLink y router-outlet
+    DrivingExperienceComponent,
+    ImageGalleryComponent,
+    TestimonialComponent,
+    FooterComponent,
+    RouterModule 
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

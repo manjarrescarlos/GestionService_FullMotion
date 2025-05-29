@@ -5,7 +5,7 @@ import { WhatsappRedirectComponent } from './components/whatsapp-redirect/whatsa
 
 const routes: Routes = [
   { path: 'whatsapp', component: WhatsappRedirectComponent },
-  // puedes agregar más rutas aquí
+
 ];
 
 @NgModule({
