@@ -1,0 +1,9 @@
+<h2>Iniciar Sesión</h2>
+<form (submit)="login(); $event.preventDefault()">
+  <input type="text" placeholder="Usuario" [(ngModel)]="username" name="username" required />
+  <input type="password" placeholder="Contraseña" [(ngModel)]="password" name="password" required />
+  <button type="submit">Ingresar</button>
+  <p *ngIf="error" style="color: red;">{{ error }}</p>
+</form>
+<p>
+  ¿No tienes una cuenta? <a routerLink="/register">Regístrate aquí</a>

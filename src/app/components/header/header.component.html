@@ -1,14 +1,19 @@
 <header class="header">
-    <a class="logo" routerLink="/">
-        <img src="assets/animations/logo.png" alt="Logo de prueba" />
-    </a>
-  
-    <nav class="nav">
-      <a routerLink="/">Inicio</a>
-      <a routerLink="/servicios">Servicios</a>
-      <a routerLink="/nosotros">Nosotros</a>
-      <a routerLink="/contacto">Contacto</a>
-      <a routerLink="/blog">Blog</a>
-    </nav>
-  </header>
-  
+  <a class="logo" routerLink="/">
+  <img src="assets/animations/logo.png" alt="Logo de prueba" class="logo-img" />
+</a>
+
+
+  <nav class="nav">
+    <a routerLink="/">Inicio</a>
+    <a routerLink="/servicios">Servicios</a>
+    <a routerLink="/nosotros">Nosotros</a>
+    <a routerLink="/contacto">Contacto</a>
+    <a routerLink="/blog">Blog</a>
+  </nav>
+
+  <div class="auth-buttons">
+    <button routerLink="/login" class="btn-login">Iniciar Sesión</button>
+    <button routerLink="/register" class="btn-register">Registrarse</button>
+  </div>
+</header>
